@@ -4,16 +4,17 @@ Este projeto faz parte da avaliação da Unidade 1 da disciplina de Sistemas Emb
 
 **Autor:** Guilherme Bonifácio Feitosa
 **Data:** 28 de Junho de 2025
+**Matrícula:** 20211ADSGR0214
 
 ---
 
 ## Descrição do Projeto
 
-A aplicação implementada no ESP32 funciona como um cliente MQTT que se conecta a uma rede Wi-Fi de 2.4GHz e a um broker MQTT público. Após a conexão, o cliente se inscreve no tópico ` /ifpe/ads/embarcados/esp32/led`.
+A aplicação implementada no ESP32 funciona como um cliente MQTT que se conecta a uma rede Wi-Fi de 2.4GHz e a um broker MQTT público. Após a conexão, o cliente se inscreve no tópico ` /ifpe/ads/embarcados/esp32/led` para receber comandos.
 
-O estado do LED embutido na placa é controlado pelas mensagens publicadas neste tópico:
--   **Mensagem `1`**: Acende o LED.
--   **Mensagem `0`**: Apaga o LED.
+O estado do LED embutido na placa é controlado da seguinte forma:
+-   Ao receber a mensagem `1` no tópico, o LED acende.
+-   Ao receber a mensagem `0` no tópico, o LED apaga.
 
 O projeto foi desenvolvido utilizando o **ESP-IDF (Espressif IoT Development Framework)**, a partir do exemplo `mqtt5/tcp`.
 
@@ -34,11 +35,7 @@ O projeto foi desenvolvido utilizando o **ESP-IDF (Espressif IoT Development Fra
 
 ### 1. Pré-requisitos
 - Ter o [ambiente ESP-IDF](https://docs.espressif.com/projects/esp-idf/pt_BR/stable/esp32/get-started/index.html) configurado no seu computador.
-- Clonar este repositório:
-  ```bash
-  git clone [https://github.com/chinhodado/persona5_calculator](https://github.com/chinhodado/persona5_calculator)
-  cd [NOME-DA-PASTA-DO-REPOSITÓRIO]
-  ```
+- Clonar este repositório: https://github.com/BonifacioGui/projeto-unidade-1---sistemas-embarcados
 
 ### 2. Configuração
 - Conecte a placa ESP32 ao seu computador.
