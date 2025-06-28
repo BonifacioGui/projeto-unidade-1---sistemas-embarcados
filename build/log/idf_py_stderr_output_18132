@@ -1,0 +1,6 @@
+info: INFO: Symbol EXAMPLE_WIFI_SSID defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\bonif\mqtt5\main\Kconfig.projbuild:11
+    C:\Users\bonif\esp\v5.4.1\esp-idf\examples\common_components\protocol_examples_common\Kconfig.projbuild:28
+info: INFO: Symbol EXAMPLE_WIFI_PASSWORD defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\bonif\mqtt5\main\Kconfig.projbuild:17
+    C:\Users\bonif\esp\v5.4.1\esp-idf\examples\common_components\protocol_examples_common\Kconfig.projbuild:35

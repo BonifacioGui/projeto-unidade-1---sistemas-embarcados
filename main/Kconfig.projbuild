@@ -1,0 +1,35 @@
+menu "CONFIGURACOES DO PROJETO"
+
+    menu "1. Conexao Wi-Fi e Broker"
+
+        config BROKER_URL
+            string "URL do Broker MQTT"
+            default "mqtt://broker.hivemq.com"
+            help
+                URL do Broker MQTT para a conexao.
+
+        config EXAMPLE_WIFI_SSID
+            string "Nome da Rede (SSID)"
+            default ""
+            help
+                Nome (SSID) da sua rede Wi-Fi.
+
+        config EXAMPLE_WIFI_PASSWORD
+            string "Senha da Rede Wi-Fi"
+            default ""
+            help
+                Senha da sua rede Wi-Fi.
+
+    endmenu
+
+    menu "2. Configuracao do LED"
+
+        config BLINK_GPIO
+            int "Pino GPIO do LED"
+            default 2
+            help
+                Pino GPIO usado para o LED. O padrao e 2.
+    
+    endmenu
+
+endmenu
