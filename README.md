@@ -47,12 +47,12 @@ O projeto foi desenvolvido utilizando o **ESP-IDF (Espressif IoT Development Fra
 
 ### 3. Compilação e Gravação
 - Com a configuração salva, use os ícones na barra azul inferior na seguinte ordem:
-  1.  **Clean** (Ícone da Lixeira 🗑️): Limpa arquivos antigos.
-  2.  **Build** (Ícone do 'Check' ✔️): Compila o projeto.
-  3.  **Flash** (Ícone do Raio ⚡): Grava o programa na placa. (Pode ser necessário segurar o botão `BOOT` da placa durante este passo).
+  1.  **Clean**: Limpa arquivos antigos.
+  2.  **Build**: Compila o projeto.
+  3.  **Flash**: Grava o programa na placa. (Pode ser necessário segurar o botão `BOOT` da placa durante este passo).
 
 ### 4. Teste
-- Após gravar, clique no ícone da **Tomada (🔌 Monitor)** para ver os logs. Aguarde a mensagem `Inscrito com sucesso no tópico, aguardando mensagens...`.
+- Após gravar, clique no monitor device para ver os logs. Aguarde a mensagem `Inscrito com sucesso no tópico, aguardando mensagens...`.
 - Use um cliente MQTT (como o MQTT Explorer) para se conectar ao broker `broker.hivemq.com`.
 - Publique no tópico `/ifpe/ads/embarcados/esp32/led`:
     - Mensagem `1` para acender o LED.
