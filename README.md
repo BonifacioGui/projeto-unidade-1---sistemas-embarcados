@@ -40,7 +40,7 @@ O projeto foi desenvolvido utilizando o **ESP-IDF (Espressif IoT Development Fra
 ### 2. Configuração
 - Conecte a placa ESP32 ao seu computador.
 - Abra o projeto no Visual Studio Code.
-- Clique no ícone de engrenagem (⚙️) na barra azul inferior para abrir o `menuconfig`.
+- Clique no ícone de engrenagem na barra azul inferior para abrir o `menuconfig`.
 - Navegue até `CONFIGURACOES DO PROJETO` -> `1. Conexao Wi-Fi e Broker`.
 - Insira o **Nome da Rede (SSID)** e a **Senha da Rede Wi-Fi** (a rede deve ser de 2.4GHz).
 - Salve as configurações.
